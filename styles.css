@@ -1,0 +1,189 @@
+
+
+
+body{
+    background-color: rgb(101, 154, 115);
+    color: rgb(65, 21, 58)
+}
+.wrapper{
+    width: 650px;
+    height: 800px;
+    background-color: plum;
+    margin: auto;
+    border-radius: 60px;
+}
+h1{
+    font-family: monospace;
+    color: aliceblue;
+    transform: translateY(20px);
+    text-align: center;
+}
+.overview{
+    transform: translateY(30px);
+    text-align: center;
+    display: grid;
+    grid-auto-flow: column;
+    grid-column-gap: 10px;    
+}
+
+.overview{
+    font-family: monospace;
+}
+.listContainer{
+    padding-bottom: 20px;
+    width: 650px;
+    height: 422px;
+    background-color: rgb(249, 228, 212);
+    border-radius: 60px;
+    transform: translateY(60px);
+}
+.tabContainer{
+    transform: translateY(60px);
+    background-color: plum;
+    padding-bottom: 30px;
+    text-align: center;
+    display: grid;
+    grid-auto-flow: column;
+    grid-column-gap: 10px; 
+}
+    
+
+.tab1, .tab2, .tab3, .tab4{
+    transform: translateX(20px);
+    border-radius: 20px;
+    height: 50px;
+    width: 90px;
+    padding-left: 20px;
+    padding-right: -70px;
+    cursor: pointer;
+}
+.tab1, .tab2, .tab3, .tab4{
+    font-family: monospace;
+    
+}
+.tab1{
+    background-color: rgb(114, 230, 112);
+}
+.tab2{
+    background-color: rgb(248, 187, 143);
+}
+.tab3{
+    background-color: rgb(248, 206, 143);
+}
+.tab4{
+    background-color: rgb(143, 178, 248);
+}
+p{
+    position: relative;
+    transform: translateX(-10px);
+}
+
+.hide{
+    position: absolute;
+}
+
+input, button{
+    color: rgb(65, 21, 58);
+    margin-left: 80px;
+    text-align: center;
+    transform: translateY(300px);
+    
+}
+button, input{
+    border: 0;
+    background-color: plum;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.inputSub{
+    margin-left: 50px;
+}
+.subButton{
+    transform: translateY(240px);
+    margin-left: 540px;
+}
+
+form{
+    transform: translateY(264px);
+    margin-left: 432px;
+}
+::placeholder{
+    color: rgb(65, 21, 58);
+    opacity: 0.5;
+}
+button{
+    width: 60px;
+    height: 30px;
+}
+
+
+.addMoney{
+    visibility: hidden;
+}
+.spendMoney{
+    visibility: hidden;
+}
+.tHistory{
+    visibility: hidden;
+}
+.wishlist{
+    visibility: hidden;
+}
+.welcome{
+    visibility: visible;
+    font-family: monospace;
+    transform: translateY(130px);
+    text-align: center;
+    font-size: 30px;
+}
+.listDiv{
+    background-color: plum;
+    border-radius: 60px;
+    width: 400px;
+    height: 250px;
+
+    overflow-y: scroll;
+    transform: translateX(123px);
+    position: absolute;
+    word-wrap: break-word;
+}
+
+.list{
+    font-family: monospace;
+    text-align: left;
+    list-style-type: none;
+}
+#expenseNum, #expenseMemo, #inputNum, #inputMemo{
+    height: 50px;
+}
+.expenseAdder{
+    display: inline;
+}
+
+.entry{
+    display: inline-block;
+    text-align: center;
+}
+#Ttype{
+    padding-left: 70px;
+}
+.expense, .income{
+    background-color: white;
+    border-bottom: solid;
+    width: 90%;
+}
+.chart{
+    display: inline-block;
+    width: 175px;
+    height: 200px;
+    margin-top: 80px;
+    margin-left: 50px;
+    text-align: center;
+    font-family: monospace;
+}
+#changingChart{
+    width: 175px;
+    height: 200px;
+    margin-top: 80px;
+    margin-left: 180px;
+}

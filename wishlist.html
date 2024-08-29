@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <title>Wishlist Budgeting App</title>
+        <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="wrapper">
+            <h1>Wishlist Bugeting</h1>
+            <div class="overview">
+                <div class="balance-c">
+                    <div id="title1" class="title1">Balance</div>
+                    <div id="test" class="Balance">$$$</div>
+                </div>
+                <div class="earned-c">
+                    <div class="title">Money Earned</div>
+                    <div class="Earned">$$$</div>
+                </div>
+                <div class="spent-c">
+                    <div class="title">Money Spent</div>
+                    <div class="Spent">$$$</div>
+                </div>
+                
+            </div>
+
+            <div class="chart"> 
+                <canvas id="myChart"></canvas>
+                <hr>Recommended</hr>
+            </div>
+
+            <div class="chart" id="changingChart">
+                <canvas id="myChart2"></canvas>
+                <hr>Your Budget</hr>
+            </div>
+
+            <div class="dashContainer">
+                <div class="tabContainer">
+                    <div class="tab1" ><p>Add Money</p></div>
+                    <div class="tab2"><p>Spend Money</p></div>
+                    <div class="tab3"><p>Transaction History</p></div>
+                    <div class="tab4"><p>CLEAR</p></div>
+                </div>
+
+                <div class="listContainer">
+                    <div class="welcome">Please select a tab to get started</div>
+                    <div class="addMoney">
+                        <div class="listDiv"><ul class="list"></ul></div>
+                        <div class="hide">
+                            <input class="inputAdd"  type="number" placeholder="$$$" id="inputNum">
+                            <input class="inputAdd" type="text" placeholder="memo" id="inputMemo">
+                            <button class="inputAdd" onclick="addButton()">add</button>
+                        </div>
+                    </div>
+                    <div class="spendMoney">
+                        <div class="listDiv"><ul class="list"></ul></div>
+                        <div class="hide">
+                            <div class="expenseAdder">
+                                <input class="inputSub"  type="number" placeholder="$$$" id="expenseNum">
+                                <input class="inputSub" type="text" placeholder="memo" id="expenseMemo">
+                                <form id="work">
+                                    <select id="sel">
+                                        <option value="Need">Need</option>
+                                        <option value="Want">Want</option>
+                                        <option value="Savings">Savings</option>
+                                    </select >
+                                </form>
+                                <button class="subButton" onclick="subButton();">add</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tHistory">
+                        <div class="listDiv"><ul class="list"></ul></div>
+                    </div>
+                    <div class="wishlist">
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="chart1.js"></script>
+          
+    </body>
+</html>
